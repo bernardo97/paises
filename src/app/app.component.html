@@ -1,0 +1,7 @@
+<ul *ngFor="let pais of paises">
+  <li>{{}pais.name}</li>
+  <li>{{pais.capital}}</li>
+  <li>{{{pais.currency[0].name}}</li>
+  <li>{{pais.population | number}}</li>
+  <li><img [src]="pais.flag" width="20%"alt=""></li>
+</ul>
